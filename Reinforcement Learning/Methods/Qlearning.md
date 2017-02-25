@@ -4,10 +4,25 @@
 
 ## **第一部分：中文翻译**
 
-![](.\pics\1.jpg)
+![](https://github.com/BillLeeCHN/MachineLearning/blob/QLearning/Reinforcement%20Learning/Methods/pics/1.png?raw=true)
+
+![](https://github.com/BillLeeCHN/MachineLearning/blob/QLearning/Reinforcement%20Learning/Methods/pics/2.png?raw=true)
+
+![](https://github.com/BillLeeCHN/MachineLearning/blob/QLearning/Reinforcement%20Learning/Methods/pics/3.png?raw=true)
+
+![](https://github.com/BillLeeCHN/MachineLearning/blob/QLearning/Reinforcement%20Learning/Methods/pics/4.png?raw=true)
+
+![](https://github.com/BillLeeCHN/MachineLearning/blob/QLearning/Reinforcement%20Learning/Methods/pics/5.png?raw=true)
+
+![](https://github.com/BillLeeCHN/MachineLearning/blob/QLearning/Reinforcement%20Learning/Methods/pics/6.png?raw=true)
+
+![](https://github.com/BillLeeCHN/MachineLearning/blob/QLearning/Reinforcement%20Learning/Methods/pics/7.png?raw=true)
+
+![](https://github.com/BillLeeCHN/MachineLearning/blob/QLearning/Reinforcement%20Learning/Methods/pics/8.png?raw=true)
 
 
 
-  ![](https://github.com/BillLeeCHN/MachineLearning/blob/QLearning/Reinforcement%20Learning/Methods/pics/1.jpg?raw=true)
+
+
 
 
