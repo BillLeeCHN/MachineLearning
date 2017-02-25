@@ -5,3 +5,9 @@
 ## **第一部分：中文翻译**
 
 ![](.\pics\1.jpg)
+
+
+
+  ![](https://github.com/BillLeeCHN/MachineLearning/blob/QLearning/Reinforcement%20Learning/Methods/pics/1.jpg?raw=true)
+
+
