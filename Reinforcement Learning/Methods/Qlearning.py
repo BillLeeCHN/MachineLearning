@@ -13,7 +13,8 @@ np.random.seed(2) # 每次产生的随机数不相同
 GAMMA = 0.8
 Q_table = np.zeros([6,6])
 EPISODES = 3000
-EPSILON = 0.1 # greedy policy
+EPSILON = 0.1   # greedy policy
+ALPHA = 0.9     # learning rate
 
 # reward array R
 R_table = np.array([[-1,-1,-1,-1,0,-1],
@@ -80,13 +81,15 @@ def QLearning():
         is_terminated = False
         while not is_terminated:
             # exploration only
-            a = choose_action_exploration(s,R_table, Q_table)
+#            a = choose_action_exploration(s,R_table, Q_table)
             # exploitation only
 #            a = choose_action_exploitation(s,R_table, Q_table)
             # exploration and exploitation
-#            a = choose_action(s, R_table, Q_table)
-            # update Q table  
+            a = choose_action(s, R_table, Q_table)
+            # update Q table: Method one
             Q_table[s,a] = R_table[s,a] + GAMMA * Q_table[a,:].max()
+            # update Q table : Method two
+#            Q_table[s,a] = (1-ALPHA) * Q_table[s,a] + ALPHA * (R_table[s,a] + GAMMA * Q_table[a,:].max())
             
             if a == 5:
                 is_terminated = True
