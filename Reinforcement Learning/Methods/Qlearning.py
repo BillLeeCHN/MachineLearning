@@ -13,8 +13,9 @@ np.random.seed(2) # 每次产生的随机数不相同
 GAMMA = 0.8
 Q_table = np.zeros([6,6])
 EPISODES = 3000
+EPSILON = 0.1 # greedy policy
 
-# reward matrix R
+# reward array R
 R_table = np.array([[-1,-1,-1,-1,0,-1],
                   [-1,-1,-1,0,-1,100],
                   [-1,-1,-1,0,-1,-1],
@@ -64,17 +65,26 @@ def max_index(values): # 返回数组最大数的所有索引
     else:
         return np.random.choice(index)
 
-    
-
+def choose_action(s, R_table, Q_table):
+    # exploration, 随机选择
+    if (np.random.uniform() < EPSILON):
+        return choose_action_exploration(s, R_table, Q_table)
+    else: # exploitation
+        return choose_action_exploitation(s, R_table, Q_table)
+        
+        
+        
 def QLearning():
     for i in range(EPISODES):
         s = np.random.choice([0,1,2,3,4,5]) # 随机选择一个初始位置
         is_terminated = False
         while not is_terminated:
             # exploration only
-#            a = choose_action_exploration(s,R_table, Q_table)
+            a = choose_action_exploration(s,R_table, Q_table)
             # exploitation only
-            a = choose_action_exploitation(s,R_table, Q_table)
+#            a = choose_action_exploitation(s,R_table, Q_table)
+            # exploration and exploitation
+#            a = choose_action(s, R_table, Q_table)
             # update Q table  
             Q_table[s,a] = R_table[s,a] + GAMMA * Q_table[a,:].max()
             
@@ -86,7 +96,7 @@ def QLearning():
     return Q_table
 
 
-
+# run function
 res = QLearning()
 print(res)
 
@@ -105,10 +115,4 @@ print(res)
 # [   0.    0.    0.    0.  400.    0.]
 # [   0.    0.    0.    0.    0.  500.]
 # [   0.    0.    0.    0.    0.  500.]]
-
-
-
-
-
-
 
