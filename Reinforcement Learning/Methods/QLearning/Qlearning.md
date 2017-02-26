@@ -26,15 +26,15 @@
 
 ## 2.1 转移规则
 
-公式(1.1)是更新状态的一种方程。
-
-另外一个公式如下：
+更新状态方程如下：
 
 ![](https://github.com/BillLeeCHN/MachineLearning/blob/master/Reinforcement%20Learning/Methods/QLearning/pics/update%20state.png?raw=true)
 
-其中：$\alpha$为学习效率(learning rate):学习速率α越大，保留之前训练的效果就越少.
+其中：α为学习效率(learning rate):学习速率α越大，保留之前训练的效果就越少.
 
-$\gamma$为折扣因子(discount factor):
+$\gamma$为折扣因子(discount factor)。
+
+当α = 1，​=1时，就得到公式(1.1)
 
 ## 2.2 选择行为action
 
