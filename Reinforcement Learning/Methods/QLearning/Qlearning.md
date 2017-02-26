@@ -6,21 +6,21 @@
 
 ## **Section 1：中文翻译**
 
-![picture_1](https://github.com/BillLeeCHN/MachineLearning/blob/QLearning/Reinforcement%20Learning/Methods/pics/1.png?raw=true)
+![picture_1](https://github.com/BillLeeCHN/MachineLearning/blob/QLearning/Reinforcement%20Learning/Methods/QLearning/pics/1.png?raw=true)
 
-![picture_2](https://github.com/BillLeeCHN/MachineLearning/blob/QLearning/Reinforcement%20Learning/Methods/pics/2.png?raw=true)
+![picture_2](https://github.com/BillLeeCHN/MachineLearning/blob/QLearning/Reinforcement%20Learning/Methods/QLearning/pics/2.png?raw=true)
 
-![picture_3](https://github.com/BillLeeCHN/MachineLearning/blob/QLearning/Reinforcement%20Learning/Methods/pics/3.png?raw=true)
+![picture_3](https://github.com/BillLeeCHN/MachineLearning/blob/QLearning/Reinforcement%20Learning/Methods/QLearning/pics/3.png?raw=true)
 
-![](https://github.com/BillLeeCHN/MachineLearning/blob/QLearning/Reinforcement%20Learning/Methods/pics/4.png?raw=true)
+![](https://github.com/BillLeeCHN/MachineLearning/blob/QLearning/Reinforcement%20Learning/Methods/QLearning/pics/4.png?raw=true)
 
-![](https://github.com/BillLeeCHN/MachineLearning/blob/QLearning/Reinforcement%20Learning/Methods/pics/5.png?raw=true)
+![](https://github.com/BillLeeCHN/MachineLearning/blob/QLearning/Reinforcement%20Learning/Methods/QLearning/pics/5.png?raw=true)
 
-![](https://github.com/BillLeeCHN/MachineLearning/blob/QLearning/Reinforcement%20Learning/Methods/pics/6.png?raw=true)
+![](https://github.com/BillLeeCHN/MachineLearning/blob/QLearning/Reinforcement%20Learning/Methods/QLearning/pics/6.png?raw=true)
 
-![](https://github.com/BillLeeCHN/MachineLearning/blob/QLearning/Reinforcement%20Learning/Methods/pics/7.png?raw=true)
+![](https://github.com/BillLeeCHN/MachineLearning/blob/QLearning/Reinforcement%20Learning/Methods/QLearning/pics/7.png?raw=true)
 
-![](https://github.com/BillLeeCHN/MachineLearning/blob/QLearning/Reinforcement%20Learning/Methods/pics/8.png?raw=true)
+![](https://github.com/BillLeeCHN/MachineLearning/blob/QLearning/Reinforcement%20Learning/Methods/QLearning/pics/8.png?raw=true)
 
 # Section 2
 
@@ -30,7 +30,7 @@
 
 另外一个公式如下：
 
-![](https://github.com/BillLeeCHN/MachineLearning/blob/QLearning/Reinforcement%20Learning/Methods/pics/update%20state.png?raw=true)
+![](https://github.com/BillLeeCHN/MachineLearning/blob/QLearning/Reinforcement%20Learning/Methods/QLearning/pics/update%20state.png?raw=true)
 
 其中：$\alpha$为学习效率(learning rate):学习速率α越大，保留之前训练的效果就越少.
 
