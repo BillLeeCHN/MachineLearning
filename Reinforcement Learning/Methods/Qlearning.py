@@ -4,7 +4,6 @@ Created on Sat Feb 25 14:05:40 2017
 
 @author: Bill Lee
 注：Q Learning 的程序
-此段代码有错误，但是不知道哪里不对，先放在这里，以后再纠正
 """
 
 import numpy as np
