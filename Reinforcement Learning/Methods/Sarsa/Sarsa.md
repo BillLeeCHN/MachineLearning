@@ -19,4 +19,6 @@ Sarsa:在确定本次state的action之后，再确定下一个state的action,然
 
 （本次state采取的action对应的reward）+（下一个state采取action对应的reward值）
 
+11
+
 
