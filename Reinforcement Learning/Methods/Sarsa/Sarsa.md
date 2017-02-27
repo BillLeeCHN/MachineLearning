@@ -35,3 +35,6 @@ Sarsa Lambda 算法是Sarsa算法的改进版本。
 -   Eligibility table存放着每一个(s,a)的衰变值，在每一个step中，执行的(s,a)值自加1，即E(s,a) = E(s,a) + 1。其他的位置没有执行，值不改变。
 -   使用此Eligibility table 对Q表执行相应计算
 -   最后对Eligibility table所有的值进行一次衰变
+-   λ=0时，E(s,a) 的值每次更新完Q表之后就会归零，此时与Sarsa算法一致
+-   λ=1时，λ对E(s,a) 的值不产生影响，只由γ对E(s,a) 的值产生影响。
+
