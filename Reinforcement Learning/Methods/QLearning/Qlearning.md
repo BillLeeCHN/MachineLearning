@@ -24,19 +24,22 @@
 
 # Section 2
 
-## 2.1 转移规则
+## 2.1Q Learning 算法示意图
+![](https://github.com/BillLeeCHN/MachineLearning/blob/QLearning/Reinforcement%20Learning/Methods/QLearning/pics/QLearning.png?raw=true)
 
-公式(1.1)是更新状态的一种方程。
+## 2.2 转移规则
 
-另外一个公式如下：
+更新状态方程如下：
 
 ![](https://github.com/BillLeeCHN/MachineLearning/blob/master/Reinforcement%20Learning/Methods/QLearning/pics/update%20state.png?raw=true)
 
-其中：$\alpha$为学习效率(learning rate):学习速率α越大，保留之前训练的效果就越少.
+其中：α为学习效率(learning rate):学习速率α越大，保留之前训练的效果就越少.
 
-$\gamma$为折扣因子(discount factor):
+γ为折扣因子(discount factor)。
 
-## 2.2 选择行为action
+当α = 1，γ=1时，就得到公式(1.1)
+
+## 2.3 选择行为action
 
 选择行为action有不同的方式，分为 exploration only 和 exploitation only 以及两者兼顾，此时就会引入ε-greedy参数(0 = ε-greedy < 1)。
 
