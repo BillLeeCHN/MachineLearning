@@ -1,10 +1,10 @@
-# 一、What is Sarsa?
+# Sarsa
 
 
-## 二、sarsa 算法示意图
+## 1、sarsa 算法示意图
 ![](https://github.com/BillLeeCHN/MachineLearning/blob/Sarsa/Reinforcement%20Learning/Methods/Sarsa/pics/sarsa.png?raw=true)
 
-## 三、与 Q-Learning 的比较
+## 2、与 Q-Learning 的比较
 Q-Learing算法示意图
 
 
@@ -21,3 +21,17 @@ Sarsa的算法示意图与Q-Learning算法示意图比较，我们发现，两�
 （本次state采取的action对应的reward）+（下一个state采取action对应的reward值）
 
 
+# Sarsa Lambda
+
+## 1、Sarsa Lambda 算法示意图
+
+![](https://github.com/BillLeeCHN/MachineLearning/blob/Sarsa/Reinforcement%20Learning/Methods/Sarsa/pics/Sarsa_lambda.png?raw=true)
+
+Sarsa Lambda 算法是Sarsa算法的改进版本。
+
+特点是：
+
+-   有一个与Q table相同行列数的表格叫做Eligibility table，row是state,column是action。
+-   Eligibility table存放着每一个(s,a)的衰变值，在每一个step中，执行的(s,a)值自加1，即E(s,a) = E(s,a) + 1。其他的位置没有执行，值不改变。
+-   使用此Eligibility table 对Q表执行相应计算
+-   最后对Eligibility table所有的值进行一次衰变
