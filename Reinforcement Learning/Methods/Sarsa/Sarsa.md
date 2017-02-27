@@ -5,7 +5,7 @@
 ![](https://github.com/BillLeeCHN/MachineLearning/blob/Sarsa/Reinforcement%20Learning/Methods/Sarsa/pics/sarsa.png?raw=true)
 
 ## 三、与 Q-Learning 的比较
-Q-Learing算法示意图
+Q-Learing算法示意图</br>
 ![](https://github.com/BillLeeCHN/MachineLearning/blob/master/Reinforcement%20Learning/Methods/QLearning/pics/QLearning.png?raw=true)
 
 sarsa的算法示意图与QLearning算法示意图比较，我们发现，两者的算法几乎相同。唯一不同的是，sarsa的Q表更新方式与QLearning不同，而采取action的方式是一致。
