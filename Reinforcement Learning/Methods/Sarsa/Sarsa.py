@@ -73,6 +73,10 @@ def choose_action(s, R_table, Q_table):
     else: # exploitation
         return choose_action_exploitation(s, R_table, Q_table)
         
+def learn(R_table, Q_table, s, a, s_, a_):
+    error = R_table[s,a] + GAMMA * Q_table[s_,a_] - Q_table[s, a]
+    Q_table[s, a] += ALPHA * error
+    
         
         
 def QLearning():
@@ -84,10 +88,8 @@ def QLearning():
             s_ = a # 下一个状态就是 a
             # exploration and exploitation
             a_ = choose_action(s_, R_table, Q_table)
-            # update Q table: Method one
-#            Q_table[s,a] = R_table[s,a] + GAMMA * Q_table[s_,a_]
-            # update Q table : Method two
-            Q_table[s,a] = (1-ALPHA) * Q_table[s,a] + ALPHA * (R_table[s,a] + GAMMA * Q_table[s_,a_])
+            # 最关键部分
+            learn(R_table, Q_table, s, a, s_, a_)
             
             if s_ == 5:
                 is_terminated = True
